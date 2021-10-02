@@ -3,7 +3,7 @@ minute = 60
 hour = minute * 60
 day = hour * 24
 #----------------
-duration = 755869
+duration = 400153
 
 if duration < minute:
     print(f"{duration} сек")
