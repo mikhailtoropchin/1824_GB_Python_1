@@ -3,13 +3,13 @@ minute = 60
 hour = minute * 60
 day = hour * 24
 #----------------
-duration = 400153
+duration = int(input("Введи время в секундах для конвертации: "))
 
 if duration < minute:
     print(f"{duration} сек")
-elif duration >= minute and duration < hour:
+elif minute <= duration < hour:
     print(f"{duration // minute} мин {duration % minute} сек")
-elif duration >= hour and duration < day:
+elif hour <= duration < day:
     print(f"{duration // hour} час {(duration % hour) // minute} мин {(duration % hour) % minute} сек")
 elif duration >= day:
     print(f"{(duration // day)} дн {(duration % day) // hour} час {(duration % hour) // minute} мин {(duration % hour) % minute} сек")
