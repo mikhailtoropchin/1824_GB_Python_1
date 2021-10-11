@@ -1,5 +1,6 @@
 num_to_translate = input("Enter a number to translate: ")
 
+
 def num_translate(num):
     """Функция переводит числительные от 0 до 10 с английского на русский"""
 
