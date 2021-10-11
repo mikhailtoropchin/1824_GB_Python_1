@@ -4,7 +4,10 @@ jokes_count = int(input("Сколько шуток хотите? "))
 
 
 def get_jokes(n: int, not_repeated: object = False) -> list:
-    """Возвращает случайно сгенерированные шутки"""
+    """
+    Возвращает случайно сгенерированные шутки
+    :param n: int, количество шуток
+    """
 
     nouns = ["автомобиль", "лес", "огонь", "город", "дом"]
     adverbs = ["сегодня", "вчера", "завтра", "позавчера", "ночью"]
@@ -23,5 +26,6 @@ def get_jokes(n: int, not_repeated: object = False) -> list:
         result.append(f"{chosen_noun} {chosen_adverb} {chosen_adjective}")
         count += 1
     return result
+
 
 print(get_jokes(jokes_count, not_repeated=True))
