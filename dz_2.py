@@ -1,3 +1,4 @@
+# самое тупое решение:
 class Solution:
     def replaceWords(self, dictionary: list[str], sentence: str) -> str:
         split_words = sentence.split(' ')
